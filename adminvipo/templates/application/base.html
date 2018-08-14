@@ -1,0 +1,143 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>VIPO</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/base-fonts.css' %}">
+	<link rel="stylesheet" href="{% static 'css/base-application.css' %}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	
+</head>
+<body class="fullheight" >
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg navbar-light bg-white">
+			<a class="navbar-brand " href="#"><span class="display-5 primary-color">VIPO</span></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+				</ul>
+				<div class="m-2 primary-color"><img class="ml-2 mr-2" src="{% static 'img/share.png' %}"> <span class="display-5">Compartir</span></div>
+				<div class="m-2 primary-color"><img class="ml-2 mr-2" src="{% static 'img/help.png' %}"><span class="display-5">Ayuda</span></div>
+				<div class="m-2 primary-color"><span class="display-5">Cerrar Sesión</span></div>
+			</div>
+		</nav>
+	</div>
+	<div class="container-fluid quit-padding">
+		
+		<div class="row header">
+			<div class="col-sm-3 ">
+				
+				<div class="d-flex justify-content-center div-medium" >
+					<img src="{% static 'img/foto-perfil.png' %}" class="rounded" alt="fondo perfil">
+					
+				</div>
+
+
+			</div>
+
+			<div class="col-sm-9 d-flex justify-content-end pr-5 pt-5 ">
+				<span class="align-self-end text-white text-center "><h1>Condominio <br>La Reserva</h1></span>
+			</div>
+
+		</div>
+
+
+
+
+		<div class="row ">
+			
+			<div class="col-sm-3 mt-5 pt-4">
+				
+				<div class="d-flex justify-content-center">
+					<h4 class="display-5">Felipe Valenzuela</h4>
+
+				</div>
+				<div class="d-flex justify-content-center">
+					<h6>felipe@reservadelasierra.com.co</h6>
+				</div>
+
+				<div class="d-flex justify-content-center">
+					<ul class="list-unstyled">
+						<li class="p-1">
+							<img class="ml-2 mr-2" src="{% static 'img/Icono mensajes.png' %}"> <span class="display-5">Mensajes</span>
+						</li>
+						<li class="p-1">
+							<img class="ml-2 mr-2" src="{% static 'img/Icono reservas.png' %}"> <span class="display-5">Reservas</span>
+						</li>
+						<li class="p-1">
+							<img class="ml-2 mr-2" src="{% static 'img/Icono comunicaciones.png' %}"> <span class="display-5">Comunicaciones</span>
+						</li>
+						<li class="p-1">
+							<img class="ml-2 mr-2" src="{% static 'img/Icono cartelera.png' %}"> <span class="display-5">Cartelera</span>
+						</li>
+						<li class="p-1">
+							<img class="ml-2 mr-2" src="{% static 'img/Icono reportes.png' %}"> <span class="display-5">Reportes</span>
+						</li>
+						<li class="p-1">
+							<img class="ml-2 mr-2" src="{% static 'img/Icono residentes.png' %}"> <span class="display-5">Residentes</span>
+						</li>
+						<li class="p-1">
+							<img class="ml-2 mr-2" src="{% static 'img/Icono reglamentos.png' %}"> <span class="display-5">Reglamentos</span>
+						</li>
+						<li class="p-1">
+							<img class="ml-2 mr-2" src="{% static 'img/Icono vigilantes.png' %}"> <span class="display-5">Vigilantes</span>
+						</li>
+						<li class="p-1">
+							<img class="ml-2 mr-2" src="{% static 'img/Icono zonas comunes.png' %}"> <span class="display-5">Zonas Comunes</span>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="col-sm-9">
+				<div class="row h-15">
+					<div class="col-sm-4 d-flex align-items-center">
+						<img class="align-self-center" src="{% static 'img/Logo residentes.png' %}"> <span class="display-4"><small>Residentes</small> </span>
+					</div>
+
+					<div class="col-sm-3 d-flex align-items-center">
+						<div class="search-container sencodary-color d-flex align-items-center">
+							<img src="{% static 'img/icon-search.png' %}">
+							<input type="text" name="search" class="search-input" placeholder="Buscar">
+						</div>
+					</div>
+
+					<div class="col-sm-5 d-flex justify-content-center align-items-center ">
+						<button class="col-sm-5 btn btn-default mr-2 text-white">Crear Nuevo</button>
+						<button class="col-sm-5 btn btn-default text-white">Subir XML</button>
+					</div>
+				</div>
+				
+
+				<div class="row h-100">
+					
+					
+
+
+				</div>
+
+				
+			</div>
+
+
+		</div>
+
+	</div>
+</body>
+<script type="text/javascript">
+	
+	$(document).ready(function() {
+    $('#example').DataTable();
+} );
+
+</script>
+</html>
+

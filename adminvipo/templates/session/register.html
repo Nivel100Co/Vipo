@@ -1,0 +1,63 @@
+{% extends "session/base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+{% block title %}
+Tu mano derecha <br> 
+en la copropiedad
+{% endblock %}
+
+
+{% block description %}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br>
+ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit <br>
+in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+{% endblock %}
+
+
+{% block formtitle %}
+Crear Cuenta
+{% endblock %}
+
+{% block formsubtitle %}
+Lorem ipsum dolor sit amet,<br> 
+consectetur adipiscing elit
+{% endblock %}
+
+
+{% block form %}
+
+{% if user_exists %}
+<div class="alert alert-danger">
+	<strong>¡Error!</strong> El usuario ya se encuentra registrado.
+</div>
+{% endif %}
+
+{% if not_valid_form %}
+<div class="alert alert-danger">
+	<strong>¡Error!</strong> El formulario no está correcto.
+</div>
+{% endif %}
+
+{% if form %}
+<form method="POST">
+	{% csrf_token %}
+	{% crispy form %}
+</form>
+{% endif %}
+
+{% endblock %}
+
+
+{% block golink %}
+<a class="h6 sencodary-color" href="../login" >
+	Volver a iniciar sesión
+</a>
+{% endblock %}
+
+
+
+

@@ -1,0 +1,28 @@
+.bg-general{
+	background-image: url( "../img/bglogin.png");
+}
+.fullheight{
+	height: 100%;
+	min-height: 100%;
+}
+html, body{
+	font-family:'Circular Std Bold';
+	height: 100%;
+	min-height: 100%;
+}
+
+.primary-color{
+	color: #02CEF7
+}
+
+.sencodary-color{
+	color:#9B9B9B;
+}
+
+.btn-create-account{
+	border-radius: 25px;
+	background: linear-gradient(to right, #029EF7, #02CEF7);
+}
+.h1, .h2, .h3, .h4, .h5, .h6{
+	font-family:'Circular Std Bold';
+}

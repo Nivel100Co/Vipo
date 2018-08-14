@@ -1,0 +1,88 @@
+
+.fullheight{
+	height: 100%;
+	min-height: 100%;
+}
+html, body{
+	font-family:'Circular Std Bold';
+	height: 100%;
+	min-height: 100%;
+}
+
+.primary-color{
+	color: #02CEF7
+}
+
+.sencodary-color{
+	color:#9B9B9B;
+}
+
+.btn-gradient{
+	border-radius: 25px;
+	background: linear-gradient(to right, #029EF7, #02CEF7);
+	width: 60%;
+}
+.h1, .h2, .h3, .h4, .h5, .h6{
+	font-family:'Circular Std Bold';
+}
+
+.header{
+	height: 25vh;
+	background: linear-gradient(to right, #029EF7, #02CEF7);
+	
+}
+
+.quit-padding{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.div-medium{
+	margin-top: 30%;
+	height: 20vh;
+}
+
+.font-small{
+	font-size: 14px;
+}
+
+.font-medium{
+	font-size: 18px;
+}
+
+.font-large{
+	font-size: 40px;
+}
+
+.font-extra-large{
+	font-size: 28px;
+}
+.search-container{
+	border-radius: 25px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #F8F8F8;
+}
+
+.search-input{
+	background-color: #F8F8F8;
+	border: none;
+}
+
+.btn-default{
+	border-radius: 25px;
+	background: linear-gradient(to right, #029EF7, #02CEF7);
+	padding-bottom: 3px;
+	padding-top: 3px;
+	border: none;
+}
+
+.full-width{
+	width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
