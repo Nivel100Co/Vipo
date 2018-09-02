@@ -52,20 +52,25 @@ class Device(models.Model):
 		'user.Users', 
 		verbose_name = 'User Owner',  
 		null = True, 
-		blank = True, 
+		blank = True,
+		on_delete=models.CASCADE, 
 		related_name = 'UserOwnerDevice'
 		)
 
 	DeviceType = models.ForeignKey(
 		'DeviceType', 
-		verbose_name = 'DeviceType'
+		verbose_name = 'DeviceType',
+		on_delete=models.CASCADE,
+		null = True, 
+		blank = True,
 		)
 
 	OperativeSystem = models.ForeignKey(
 		'OperativeSystem', 
 		verbose_name = 'OperativeSystem',  
 		null = True, 
-		blank = True
+		blank = True,
+		on_delete=models.CASCADE, 
 		)
 
 	DeviceId = models.CharField(
